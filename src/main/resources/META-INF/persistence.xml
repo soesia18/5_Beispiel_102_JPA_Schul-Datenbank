@@ -5,6 +5,9 @@
              version="3.0">
     <persistence-unit name="PU_102_jpa_schooldb">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>at.kaindorf.pojo.Classname</class>
+        <class>at.kaindorf.pojo.ClassTeacher</class>
+        <class>at.kaindorf.pojo.Room</class>
         <properties>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/102_jpa_schooldb"/>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
