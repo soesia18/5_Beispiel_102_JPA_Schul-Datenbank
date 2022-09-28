@@ -10,7 +10,7 @@ import lombok.*;
 @RequiredArgsConstructor
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "Classname.findByClassName",query = "SELECT cn FROM Classname cn WHERE cn.name = :className"),
+        @NamedQuery(name = "Classname.findByName",query = "SELECT cn FROM Classname cn WHERE cn.name = :name"),
         @NamedQuery(name = "Classname.findAll", query = "SELECT cn FROM Classname cn ORDER BY cn.classId"),
         @NamedQuery(name = "Classname.findByFloor", query = "SELECT cn FROM Classname cn INNER JOIN Room r ON cn.room.roomId = r.roomId WHERE r.floor = :floor ORDER BY cn.classId"),
         @NamedQuery(name = "Classname.countAll", query = "SELECT COUNT(cn) FROM Classname cn")
@@ -27,7 +27,7 @@ public class Classname {
     private int size;
 
     @OneToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "roomid")
+    @JoinColumn(name = "roomId")
     private Room room;
 
     @OneToOne(cascade = CascadeType.PERSIST)

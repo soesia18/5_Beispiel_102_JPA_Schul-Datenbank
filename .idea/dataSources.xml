@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="102_jpa_schooldb" uuid="f1047870-430c-4b9d-bd87-7aabc9685c45">
+    <data-source source="LOCAL" name="classdb" uuid="7e4cc89f-d2c5-44f5-a426-4a712dc1378a">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/102_jpa_schooldb</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/classdb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

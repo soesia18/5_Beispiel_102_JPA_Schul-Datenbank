@@ -3,13 +3,13 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
-    <persistence-unit name="PU_102_jpa_schooldb">
+    <persistence-unit name="PU_classdb">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <class>at.kaindorf.pojo.Classname</class>
         <class>at.kaindorf.pojo.ClassTeacher</class>
         <class>at.kaindorf.pojo.Room</class>
         <properties>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/102_jpa_schooldb"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/classdb"/>
             <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="jakarta.persistence.jdbc.user" value="postgres"/>
             <property name="jakarta.persistence.jdbc.password" value="postgres"/>
